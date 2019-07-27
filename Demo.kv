@@ -1,0 +1,24 @@
+#:kivy 1.11
+
+<Demo>:
+    cols: 1
+
+    BoxLayout:
+        orientation: 'vertical'
+        Button:
+            size_hint_x: 0.4
+            pos_hint: {'x': 0}
+            text: 'pos_hint: x=0'
+
+        Button:
+            size_hint_x: 0.2
+            pos_hint: {'center_x': 0.5}
+            text: 'pos_hint: center_x=0.5'
+
+        Button:
+            size_hint_x: 0.4
+            pos_hint: {'right': 1}
+            text: 'pos_hint: right=1'
+
+    
+

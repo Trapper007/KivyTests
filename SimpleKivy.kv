@@ -1,0 +1,54 @@
+#:kivy 1.11
+
+# parameter unit als Standardeinheit
+#:set unit 100
+
+<Namen@Label>:
+    #size: unit, unit*.5
+    color: 0,1,1,1
+    font_size: 28
+ 
+<Degrees@Label>:
+    #size: unit, unit*.5
+    color: 1,1,1,1
+    font_size: 32
+
+<Button>:
+    #size: unit, unit
+    color: 1,0,0,1
+    #font_size: 32
+
+<LeftRightWidget@BoxLayout>
+    orientation: 'horizontal'
+    Button:
+        text: "<-"
+
+    Button:
+        text: "->"
+
+
+
+[DegreeWidget@BoxLayout]:
+    orientation: 'vertical'
+    Namen:
+        width: unit
+        text: "Heading"
+
+    Degrees:
+        width: unit
+        text: "234"
+
+    LeftRightWidget:
+        width: unit
+
+<MyWidget>:
+    cols:2
+    col_default_width: unit
+    row_default_height: unit*.5
+    DegreeWidget:
+    DegreeWidget:
+    DegreeWidget:
+    DegreeWidget:
+    DegreeWidget:
+
+        
